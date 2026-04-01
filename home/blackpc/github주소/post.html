@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 포스트</title>
+    <meta name="description" content="블로그 포스트 상세 페이지">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">My<span>Blog</span></a></h1>
+            <nav class="nav-links">
+                <a href="index.html">홈</a>
+                <a href="#">소개</a>
+                <a href="#">연락처</a>
+            </nav>
+            <button class="theme-toggle" id="theme-btn" aria-label="테마 변경">☀️</button>
+        </div>
+    </header>
+
+    <!-- Post Article -->
+    <main class="container article-container">
+        <article class="post-content glass" id="post-view">
+            <div class="post-header">
+                <span class="category" id="post-category">로딩중...</span>
+                <h1 id="post-title">포스트를 불러오는 중입니다.</h1>
+                <div class="post-meta">
+                    <span id="post-date">...</span>
+                </div>
+            </div>
+            
+            <div class="post-body" id="post-body">
+                <p>로딩이 지연되고 있습니다. 잠시만 기다려주세요.</p>
+            </div>
+            
+            <a href="index.html" class="back-btn">← 목록으로 돌아가기</a>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyBlog by BlackPC. All rights reserved.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

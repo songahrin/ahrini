@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 메인 페이지</title>
+    <meta name="description" content="개발, 디자인, 일상을 나누는 프리미엄 블로그">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo">My<span>Blog</span></h1>
+            <nav class="nav-links">
+                <a href="index.html" class="active">홈</a>
+                <a href="#">소개</a>
+                <a href="#">연락처</a>
+            </nav>
+            <button class="theme-toggle" id="theme-btn" aria-label="테마 변경">☀️</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero glass">
+        <div class="hero-content">
+            <h2 class="hero-title">나만의 특별한 <span>인사이트</span> 노트</h2>
+            <p class="hero-subtitle">개발부터 일상까지, 혁신적인 생각들을 담아냅니다.</p>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="posts-grid" id="post-list">
+            <!-- Posts injected by JS -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyBlog by BlackPC. All rights reserved.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
