@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 연락처</title>
+    <meta name="description" content="블로그 운영자에게 연락하기">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">My<span>Blog</span></a></h1>
+            <nav class="nav-links">
+                <a href="index.html">홈</a>
+                <a href="about.html">소개</a>
+                <a href="contact.html" class="active">연락처</a>
+            </nav>
+            <button class="theme-toggle" id="theme-btn" aria-label="테마 변경">☀️</button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="container article-container">
+        <section class="post-content glass" style="padding: 60px 40px; max-width: 700px; margin: 40px auto; overflow: hidden;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; text-align: center;">Get In Touch</h1>
+            <p style="color: var(--text-secondary); text-align: center; margin-bottom: 40px; font-size: 1.1rem;">프로젝트 문의나 협업 제안을 환영합니다. 아래 폼을 통해 메시지를 남겨주세요.</p>
+            
+            <form style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">이름</label>
+                    <input type="text" placeholder="홍길동" style="padding: 16px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; transition: var(--transition);">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">이메일</label>
+                    <input type="email" placeholder="example@email.com" style="padding: 16px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; transition: var(--transition);">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">메시지</label>
+                    <textarea rows="6" placeholder="내용을 자세히 입력해주세요" style="padding: 16px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; resize: vertical; transition: var(--transition);"></textarea>
+                </div>
+                <button type="submit" style="margin-top: 15px; padding: 18px; border-radius: 12px; border: none; background: linear-gradient(135deg, var(--accent), #e052a0); color: white; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(94, 106, 210, 0.4);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">메시지 전송하기</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyBlog by BlackPC. All rights reserved.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
