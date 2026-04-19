@@ -1,0 +1,56 @@
+$template = @"
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 게시글 {0}</title>
+    <meta name="description" content="게시글 {0} 설명">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+    
+<header class="navbar">
+    <div class="container nav-content">
+        <h1 class="logo"><a href="index.html">My<span>Blog</span></a></h1>
+        <nav class="nav-links">
+            <a href="index.html">홈</a>
+            <a href="about.html">소개</a>
+            <a href="contact.html">연락처</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container article-container">
+    <article class="post-content glass">
+        <h1>게시글 {0} 제목</h1>
+        <p>2026.04.19</p>
+
+        <p>
+            여기에 글 내용을 작성하면 됩니다.<br>
+            이 구조 그대로 복사해서 55개 만들면 블로그 완성됩니다.
+        </p>
+
+        <br><br>
+        <a href="index.html">← 목록으로 돌아가기</a>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2026 MyBlog by BlackPC.</p>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
+"@
+
+for ($i=1; $i -le 55; $i++) {
+    $content = $template -f $i
+    $filename = "post$i.html"
+    [System.IO.File]::WriteAllText((Join-Path (Get-Location) $filename), $content, [System.Text.Encoding]::UTF8)
+}
+
+Write-Host "55 HTML files generated successfully."
+
