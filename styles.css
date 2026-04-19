@@ -211,3 +211,26 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* ================= Forms & Buttons ================= */
+button, 
+input[type="submit"] {
+    background-color: #d32f2f; /* 진한 빨간색 */
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #b71c1c; /* 마우스 올렸을 때 더 진한 빨간색 */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(211, 47, 47, 0.4);
+}
