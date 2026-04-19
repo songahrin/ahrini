@@ -1,6 +1,8 @@
 ﻿$links = ""
+$navLinks = ""
 for ($i=1; $i -le 55; $i++) {
     $links += "            <li style=`"margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;`"><a href=`"page$i.html`" style=`"text-decoration: none; color: inherit; font-size: 1.1rem;`">페이지 $i 제목</a> <br><small style=`"color: #888;`">2026.04.19</small></li>`n"
+    $navLinks += "`n            <a href=`"page$i.html`">페이지 $i</a>"
 }
 
 $template = @"
@@ -19,10 +21,10 @@ $template = @"
 <header class="navbar">
     <div class="container nav-content">
         <h1 class="logo"><a href="index.html">My<span>Blog</span></a></h1>
-        <nav class="nav-links">
+        <nav class="nav-links" style="overflow-x: auto; white-space: nowrap; max-width: 60vw;">
             <a href="index.html">홈</a>
             <a href="about.html">소개</a>
-            <a href="contact.html">연락처</a>
+            <a href="contact.html">연락처</a>$navLinks
         </nav>
     </div>
 </header>

@@ -1,4 +1,9 @@
-﻿$template = @"
+﻿$navLinks = ""
+for ($i=1; $i -le 55; $i++) {
+    $navLinks += "`n            <a href=`"page$i.html`">페이지 $i</a>"
+}
+
+$template = @"
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -14,10 +19,10 @@
 <header class="navbar">
     <div class="container nav-content">
         <h1 class="logo"><a href="index.html">My<span>Blog</span></a></h1>
-        <nav class="nav-links">
+        <nav class="nav-links" style="overflow-x: auto; white-space: nowrap; max-width: 60vw;">
             <a href="index.html">홈</a>
             <a href="about.html">소개</a>
-            <a href="contact.html">연락처</a>
+            <a href="contact.html">연락처</a>$navLinks
         </nav>
     </div>
 </header>
