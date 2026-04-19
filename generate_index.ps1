@@ -1,4 +1,4 @@
-$links = ""
+﻿$links = ""
 for ($i=1; $i -le 55; $i++) {
     $links += "            <li style=`"margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;`"><a href=`"post$i.html`" style=`"text-decoration: none; color: inherit; font-size: 1.1rem;`">게시글 $i 제목</a> <br><small style=`"color: #888;`">2026.04.19</small></li>`n"
 }
