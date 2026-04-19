@@ -7,7 +7,8 @@
     --bg-gradient: linear-gradient(135deg, #ffffff 0%, #ffefef 40%, #ff4b4b 100%);
     --text-primary: #2d2d2d;
     --text-secondary: #555555;
-    --accent-color: #e63946;
+    --accent-color: #0ea5e9; /* Sky Blue */
+    --accent-hover: #0284c7; /* Darker Sky Blue */
     
     /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -79,7 +80,7 @@ body {
     height: 6px;
 }
 .nav-links::-webkit-scrollbar-thumb {
-    background: rgba(230, 57, 70, 0.3);
+    background: rgba(14, 165, 233, 0.3);
     border-radius: 10px;
 }
 .nav-links::-webkit-scrollbar-track {
@@ -98,7 +99,7 @@ body {
 
 .nav-links a:hover {
     color: var(--accent-color);
-    background: rgba(230, 57, 70, 0.08);
+    background: rgba(14, 165, 233, 0.08);
 }
 
 /* ================= Main Content ================= */
@@ -142,16 +143,24 @@ body {
     color: var(--text-secondary);
 }
 
-.post-content a {
-    color: var(--accent-color);
+.post-content > a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    margin-top: 10px;
 }
 
-.post-content a:hover {
-    color: #c92a37;
-    text-decoration: underline;
+.post-content > a:hover {
+    background-color: var(--accent-hover);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
 }
 
 /* List Items (Index Page) */
